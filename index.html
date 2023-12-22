@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="//cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+    <div id="imagelist">
+      <select id="select" name="image">
+      </select>
+      <!--
+      <button id="selectbutton" onclick="reloadPageWithSelectedImage()">GO</button>
+      --> 
+    </div>
+    
+<div id="hello-vue">
+  
+
+  <!--<span style="color: #6C6; font-size: 200px; position: fixed; left: 200px; top: -90px;"></span>-->
+  <span v-for="y in rows">
+    <span class="hex"
+      onClick="fadeOut(this)" 
+      v-for="x in cols" 
+      v-bind:style="{ fontSize: myfontSize + 'em', position: 'fixed', left: getLeft(x,y) + 'px', top: getTop(y) + 'px'}"
+      ><svg-hexagon filll="#f00" class="c1"></svg-hexagon></span>
+  </span>
+  <div id="imagediv"></div>
+
+  <div id="debug">
+    <span>{{timeout}}</span>
+    &nbsp;
+    <span>{{status}}</span>
+
+  </div>
+
+</div>
+
+
+<div id="borderRight" style="display: none; position: fixed; border: 0px solid red; top: 0px; left: 0px; width: 4000px; height: 4000px; background-color: black;"></div>
+<div id="borderBottom" style="display: none; position: fixed; border: 0px solid red; top: 0px; left: 0px; width: 4000px; height: 4000px; background-color: black;"></div>
+<!--
+<div id="xx-borderRight" style="display: none; position: fixed; border: 0px solid red; top: 0px; left: 0px; width: 10000px; height: 10000px; background-color: black;"></div>
+<div id="borderBottom" style="display: none; position: fixed; border: 0px solid red; top: 0px; left: 0px; width: 10000px; height: 10000px; background-color: black;"></div>
+-->
+
+<div id="full"></div>
+
+<script src="imagelist.js"></script>
+<script src="code.js"></script>
+
+</body>
+
+</html>
