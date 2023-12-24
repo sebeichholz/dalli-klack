@@ -93,19 +93,20 @@ svg polygon:hover {
     padding: 0px;
 }
 #debug {
+    font-family: Arial;
     position: fixed;
     right: 0px;
     bottom: 0px;
     /*background-color: #dddddd;*/
     /*width: 200px;
     height: 20px;*/
-    border: 1px solid black;
+    border: 0px solid red;
     z-index: 11;
-    color:#aaffaa;
-    opacity: 0.4;
-    height: 10vh;
-    line-height: 10vh;
-    font-size: 3vh;
+    color:#cc008f;
+    opacity: 0.8;
+    font-size: 2vh;
     text-align: center;
-    width: 15%;
+    right: 0px;
+    background-color: black;
+    padding: .3vh
 }

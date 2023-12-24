@@ -1,3 +1,5 @@
+# dalli-klack
+
 
 Anleitung:
 - jpg Dateien ins images Verzeichnis kopieren
@@ -14,4 +16,5 @@ Anleitung:
     - r => einzelnes Hexagon ausblenden
     - + und - => Intervall für Auflösen der Hexagons anpassen
     - Space => alle Hexagons ausblenden
-# dalli-klack
+    - h => Startseite (kein Bild ausgewählt)
+
