@@ -14,7 +14,7 @@ Anleitung:
     - q => Clear Cookies (angesehene Bilder löschen)
     - p => Start / Pause
     - r => einzelnes Hexagon ausblenden
-    - + und - => Intervall für Auflösen der Hexagons anpassen
+    - +/- => Intervall für Auflösen der Hexagons anpassen
     - Space => alle Hexagons ausblenden
     - h => Startseite (kein Bild ausgewählt)
 
